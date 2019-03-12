@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "normal": [
+      { "model": "lights:light_block_yellow" }
+    ]
+  }
+}

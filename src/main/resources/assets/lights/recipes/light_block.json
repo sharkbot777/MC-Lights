@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#T#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:glass",
+      "data": 0
+    },
+    "T": {
+      "item": "minecraft:torch",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "lights:light_block",
+    "data": 2,
+    "count": 16
+  }
+}
+
+

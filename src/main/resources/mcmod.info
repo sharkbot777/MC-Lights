@@ -1,0 +1,16 @@
+[
+{
+  "modid": "lights",
+  "name": "Sharkbots Lights Mod",
+  "description": "Cheap Light",
+  "version": "1.0",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["sharkbot777"],
+  "credits": "The internet",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

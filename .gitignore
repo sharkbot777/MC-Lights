@@ -1,0 +1,34 @@
+*.class
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+.gradle/
+build.gradle
+.settings/
+build/tmp/
+gradle/
+run/
+ForgeTutorial_Client.launch
+ForgeTutorial_Server.launch
+.project
+.classpath
+gradlew.bat
+bin/
+ForgeTutorialPictures/
+Testing/
+build/
+output.mp4
+outputGource.ppm
+test
+gource.mp4

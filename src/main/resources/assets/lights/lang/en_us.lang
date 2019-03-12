@@ -1,0 +1,11 @@
+
+tile.light_block_green.name=Light Block Green
+tile.light_block_purple.name=Light Block Purple
+tile.light_block_orange.name=Light Block Orange
+tile.light_block_yellow.name=Light Block Yellow
+tile.light_block_red.name=Light Block Red
+tile.light_block_blue.name=Light Block Blue
+tile.light_block.name=Light Block
+
+itemGroup.tabLights=Lights
+
