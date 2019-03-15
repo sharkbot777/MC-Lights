@@ -27,7 +27,7 @@ public class ClientProxy implements IProxy {
 
 	@Override
 	public void init(FMLInitializationEvent event) {
-		
+
 	}
 
 	@Override

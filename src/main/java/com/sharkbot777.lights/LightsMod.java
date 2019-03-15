@@ -4,6 +4,7 @@ import com.sharkbot777.lights.init.ModBlocks;
 import com.sharkbot777.lights.init.ModRecipes;
 import com.sharkbot777.lights.proxies.IProxy;
 
+
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;

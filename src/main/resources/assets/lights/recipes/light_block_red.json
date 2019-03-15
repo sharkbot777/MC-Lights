@@ -3,7 +3,7 @@
   "pattern": [
     "###",
     "#T#",
-    "###"
+    "#B#"
   ],
   "key": {
     "#": {
@@ -13,10 +13,14 @@
     "T": {
       "item": "minecraft:torch",
       "data": 0
+    },
+    "B": {
+      "item": "minecraft:red_flower",
+      "data": 0
     }
   },
   "result": {
-    "item": "lights:light_block",
+    "item": "lights:light_block_red",
     "data": 0,
     "count": 16
   }

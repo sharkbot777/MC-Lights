@@ -1,9 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "###",
-    "#T#",
-    "###"
+    "T#T",
+    "#B#",
+    "T#T"
   ],
   "key": {
     "#": {
@@ -13,10 +13,14 @@
     "T": {
       "item": "minecraft:torch",
       "data": 0
+    },
+    "B": {
+      "item": "minecraft:grass",
+      "data": 0
     }
   },
   "result": {
-    "item": "lights:light_block",
+    "item": "lights:light_sphere_green",
     "data": 0,
     "count": 16
   }

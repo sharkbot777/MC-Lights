@@ -15,13 +15,13 @@
       "data": 0
     },
     "B": {
-      "item": "minecraft:red_flower",
+      "item": "minecraft:lapis_block",
       "data": 0
     }
   },
   "result": {
     "item": "lights:light_block_blue",
-    "data": 2,
+    "data": 0,
     "count": 16
   }
 }

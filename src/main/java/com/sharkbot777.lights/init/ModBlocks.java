@@ -1,11 +1,11 @@
 package com.sharkbot777.lights.init;
 
 import com.sharkbot777.lights.Reference;
-import com.sharkbot777.lights.blocks.BlockBasic;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import com.sharkbot777.lights.blocks.*;
 
 
 
+import net.minecraft.block.state.IBlockState;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -25,8 +25,11 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
+
 @Mod.EventBusSubscriber(modid=Reference.MODID)
 public class ModBlocks {
+
+
 	public static Block lightBlock;
 	public static Block lightBlockGreen;
 	public static Block lightBlockPurple;
@@ -34,6 +37,16 @@ public class ModBlocks {
 	public static Block lightBlockYellow;
 	public static Block lightBlockRed;
 	public static Block lightBlockBlue;
+	public static Block lightSphere;
+	public static Block lightSphereBlue;
+	public static Block lightSphereGreen;
+	public static Block lightSphereRed;
+	public static Block lightSphereOrange;
+	public static Block lightSphereYellow;
+	public static Block lightSpherePurple;
+
+
+
 
 	static final CreativeTabs tabLightsMod = new CreativeTabs("Lights") {
 
@@ -58,12 +71,26 @@ public class ModBlocks {
 		lightBlockRed = new BlockBasic("light_block_red", Material.ROCK).setHardness(1.5f).setCreativeTab(ModBlocks.tabLightsMod).setLightLevel(1.0f);
 		lightBlockBlue = new BlockBasic("light_block_blue", Material.ROCK).setHardness(1.5f).setCreativeTab(ModBlocks.tabLightsMod).setLightLevel(1.0f);
 		lightBlock = new BlockBasic("light_block", Material.ROCK).setHardness(1.5f).setCreativeTab(ModBlocks.tabLightsMod).setLightLevel(1.0f);
+		lightSphere = new BlockSphere("light_sphere", Material.ROCK).setHardness(1.5f).setCreativeTab(ModBlocks.tabLightsMod).setLightLevel(1.0f);
+		lightSphereBlue = new BlockSphere("light_sphere_blue", Material.ROCK).setHardness(1.5f).setCreativeTab(ModBlocks.tabLightsMod).setLightLevel(1.0f);
+		lightSphereGreen = new BlockSphere("light_sphere_green", Material.ROCK).setHardness(1.5f).setCreativeTab(ModBlocks.tabLightsMod).setLightLevel(1.0f);
+		lightSphereRed = new BlockSphere("light_sphere_red", Material.ROCK).setHardness(1.5f).setCreativeTab(ModBlocks.tabLightsMod).setLightLevel(1.0f);
+		lightSphereOrange = new BlockSphere("light_sphere_orange", Material.ROCK).setHardness(1.5f).setCreativeTab(ModBlocks.tabLightsMod).setLightLevel(1.0f);
+		lightSphereYellow = new BlockSphere("light_sphere_yellow", Material.ROCK).setHardness(1.5f).setCreativeTab(ModBlocks.tabLightsMod).setLightLevel(1.0f);
+		lightSpherePurple= new BlockSphere("light_sphere_purple", Material.ROCK).setHardness(1.5f).setCreativeTab(ModBlocks.tabLightsMod).setLightLevel(1.0f);
+
 		lightBlock.setHarvestLevel("pickaxe", 2);
+
+
 	}
+
+
+
 
 	@SubscribeEvent
 	public static void registerBlocks(RegistryEvent.Register<Block> event) {
-		event.getRegistry().registerAll(lightBlock, lightBlockGreen, lightBlockPurple, lightBlockOrange, lightBlockYellow, lightBlockRed, lightBlockBlue);
+		event.getRegistry().registerAll(lightBlock, lightBlockGreen, lightBlockPurple, lightBlockOrange, lightBlockYellow, lightBlockRed, lightBlockBlue, lightSphere, lightSphereBlue, lightSphereGreen, lightSphereRed, lightSphereOrange, lightSphereYellow, lightSpherePurple);
+
 	}
 
 	@SubscribeEvent
@@ -75,7 +102,18 @@ public class ModBlocks {
 		event.getRegistry().register(new ItemBlock(lightBlockYellow).setRegistryName(lightBlockYellow.getRegistryName()));
 		event.getRegistry().register(new ItemBlock(lightBlockRed).setRegistryName(lightBlockRed.getRegistryName()));
 		event.getRegistry().register(new ItemBlock(lightBlockBlue).setRegistryName(lightBlockBlue.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(lightSphere).setRegistryName(lightSphere.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(lightSphereBlue).setRegistryName(lightSphereBlue.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(lightSphereGreen).setRegistryName(lightSphereGreen.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(lightSphereRed).setRegistryName(lightSphereRed.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(lightSphereOrange).setRegistryName(lightSphereOrange.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(lightSphereYellow).setRegistryName(lightSphereYellow.getRegistryName()));
+		event.getRegistry().register(new ItemBlock(lightSpherePurple).setRegistryName(lightSpherePurple.getRegistryName()));
+
+
+
 	}
+
 
 	@SubscribeEvent
 	public static void registerRenders(ModelRegistryEvent event) {
@@ -86,11 +124,20 @@ public class ModBlocks {
 		registerRender(Item.getItemFromBlock(lightBlockYellow));
 		registerRender(Item.getItemFromBlock(lightBlockRed));
 		registerRender(Item.getItemFromBlock(lightBlockBlue));
-	}
+		registerRender(Item.getItemFromBlock(lightSphere));
+		registerRender(Item.getItemFromBlock(lightSphereBlue));
+		registerRender(Item.getItemFromBlock(lightSphereGreen));
+		registerRender(Item.getItemFromBlock(lightSphereRed));
+		registerRender(Item.getItemFromBlock(lightSphereOrange));
+		registerRender(Item.getItemFromBlock(lightSphereYellow));
+		registerRender(Item.getItemFromBlock(lightSpherePurple));
 
+
+	}
 	public static void registerRender(Item item) {
 		ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation( item.getRegistryName(), "inventory"));
 	}
+
 
 
 }

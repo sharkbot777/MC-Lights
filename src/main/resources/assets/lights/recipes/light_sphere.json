@@ -1,9 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "###",
+    "T#T",
     "#T#",
-    "###"
+    "T#T"
   ],
   "key": {
     "#": {
@@ -16,7 +16,7 @@
     }
   },
   "result": {
-    "item": "lights:light_block",
+    "item": "lights:light_sphere",
     "data": 0,
     "count": 16
   }
